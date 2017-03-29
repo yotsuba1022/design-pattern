@@ -6,7 +6,7 @@ package idv.design.pattern.simpleFactory.example2;
 public abstract class Client {
 
     public static void main(String[] args) {
-        Api api = Factory.createApi(1);
+        Api api = Factory.createApi(2);
         api.callApi("With simple factory.");
     }
 
