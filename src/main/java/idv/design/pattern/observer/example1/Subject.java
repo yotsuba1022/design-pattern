@@ -8,13 +8,13 @@ import java.util.List;
  */
 public class Subject {
 
-    private List<Observer> observers = new ArrayList<Observer>();
+    private final List<Observer> observers = new ArrayList<>();
 
-    public void attach(Observer observer) {
+    public void attach(final Observer observer) {
         observers.add(observer);
     }
 
-    public void detach(Observer observer) {
+    public void detach(final Observer observer) {
         observers.remove(observer);
     }
 

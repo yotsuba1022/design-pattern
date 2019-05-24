@@ -7,8 +7,12 @@ public class ConcreteObserver implements Observer {
 
     private String observerState;
 
-    public void update(Subject subject) {
-        observerState = ((ConcreteSubject) subject).getSubjectState();
+    public void update(final Subject subject) {
+        observerState = ( (ConcreteSubject) subject ).getSubjectState();
+    }
+
+    public String getObserverState() {
+        return observerState;
     }
 
 }
